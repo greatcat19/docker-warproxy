@@ -56,7 +56,7 @@ As wireproxy is binding to `socks5://0.0.0.0:8080`, you can directly access it i
 | `PROXY_ENABLED`  | set `false` to disable proxy | `true` |
 | `PROXY_USER` / `PROXY_PASS`  | required both to activate proxy authentication   |  |
 | `PROXY_PORT`  | to run proxy in a different port  | `8008` |
-| `SOCKS_PORT`  | to run proxy in a different port  |  |
+| `SOCKS_PORT`  | to run proxy using socks5 with auth  |  |
 | `PROXY_VERBOSE`  | simple access logging  |  |
 | `PROXY_AUTHTIME`  | re-auth time interval for same ip (second in string format)  | `0` |
 
