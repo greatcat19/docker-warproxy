@@ -11,13 +11,6 @@ command="pproxy -l http://0.0.0.0:${PROXY_PORT}"
 if [[ -n ${PROXY_USER:-} ]] && [[ -n ${PROXY_PASS:-} ]]; then
     command="$command#${PROXY_USER}:${PROXY_PASS}"
 fi
-if [[ -n ${SOCKS_PORT:-} ]] ; then
-    command="-l socks5://0.0.0.0:${SOCKS_PORT}"
-
-    if [[ -n ${PROXY_USER:-} ]] && [[ -n ${PROXY_PASS:-} ]]; then
-        command="$command#${PROXY_USER}:${PROXY_PASS}"
-    fi
-fi
 command="$command -r socks5://127.0.0.1:8080"
 command="$command --auth ${PROXY_AUTHTIME:-0}${PROXY_VERBOSE+ -v}"
 
