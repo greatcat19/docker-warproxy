@@ -8,7 +8,7 @@ on:
 
 env:
   IMAGE_NAME: ghcr.io/greatcat19/docker-warproxy # ${{ github.repository }}
-  # REGISTRY: ghcr.io
+  REGISTRY: ghcr.io
 
 
 jobs:
