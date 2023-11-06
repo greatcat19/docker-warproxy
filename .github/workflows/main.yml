@@ -7,8 +7,8 @@ on:
       - 'main'
 
 env:
-  IMAGE_NAME: ghcr.io/${{ github.repository }}
-  REGISTRY: ghcr.io
+  IMAGE_NAME: ghcr.io/greatcat19/docker-warproxy # ${{ github.repository }}
+  # REGISTRY: ghcr.io
 
 
 jobs:
