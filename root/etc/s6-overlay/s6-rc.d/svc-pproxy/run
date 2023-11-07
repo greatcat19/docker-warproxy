@@ -12,7 +12,7 @@ if [[ -n ${PROXY_USER:-} ]] && [[ -n ${PROXY_PASS:-} ]]; then
     command="$command#${PROXY_USER}:${PROXY_PASS}"
 fi
 if [[ -n ${SOCKS_PORT:-} ]] ; then
-    command="-l socks5://0.0.0.0:${SOCKS_PORT}"
+    command="$command -l socks5://0.0.0.0:${SOCKS_PORT}"
 
     if [[ -n ${PROXY_USER:-} ]] && [[ -n ${PROXY_PASS:-} ]]; then
         command="$command#${PROXY_USER}:${PROXY_PASS}"
